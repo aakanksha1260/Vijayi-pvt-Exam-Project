@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Product Order List</h1>
+    <table id="product-grid">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <select class="product-select">
+                        <option>Choose Product</option>
+                        <option>Pencil</option>
+                        <option>Eraser</option>
+                        <option>Pens</option>
+                        <!-- Add more products as needed -->
+                    </select>
+                </td>
+                <td>
+                    <select class="quantity-select">
+                        <option>Choose Quantity</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="add-button">ADD</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="show-order">Show Order</button>
+
+    <table id="order-summary" class="hidden">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <button id="read-order" class="hidden">What is my Order?</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
